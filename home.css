@@ -7,10 +7,14 @@
 body{
     background-color: white;
 }
+.free img
+{
+  width: 10%;
+}
 .logohome img
 {
     width: 20%;
-    margin-top: 20px;
+    margin-top: 5px;
     transform: translate(10%,110%);
 }
 .menu-bar
@@ -29,35 +33,33 @@ body{
 }
 .menu-bar ul li
 {
-    width: 60px;
-    margin: 10px;
+    width: 20px;
+    margin: 30px;
     padding: -15px; 
+    position: relative;
 }
 .menu-bar ul li a
 {
 text-decoration: none;
 color: aliceblue;
 }
-.active, .menu-bar ul li:hover
+.active, .dropdown__menu li
 {
     background: #f8982d;
     border-radius: 3px;
 }
-.menu-bar ul li:hover{
-    background: #f8982d;
-    border-radius: 3px;
 
-}
-.sub-menu-1
-{
-    display: none;
-}
-.menu-bar ul li:hover .sub-menu-1
+.menu-bar ul li:hover .dropdown__menu
 {
     display: block;
     position: absolute;
-    background: black;
-
-
-
+    background-color: black;
+}
+.dropdown__menu ul{
+    display: block;
+    margin: 35px;
+}
+.dropdown__menu ul li{
+    width: 200px;
+    padding: 10px;
 }
